@@ -1,0 +1,6 @@
+framework module UIImageView_Extension {
+  umbrella header "UIImageView+Extension-umbrella.h"
+
+  export *
+  module * { export * }
+}

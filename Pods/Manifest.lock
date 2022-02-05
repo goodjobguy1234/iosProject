@@ -1,0 +1,28 @@
+PODS:
+  - CampcotCollectionView (0.0.7)
+  - Cosmos (23.0.0)
+  - PlutoView (0.0.3)
+  - "UIImageView+Extension (0.2.6)"
+
+DEPENDENCIES:
+  - CampcotCollectionView
+  - Cosmos (~> 23.0)
+  - PlutoView
+  - "UIImageView+Extension (~> 0.2)"
+
+SPEC REPOS:
+  trunk:
+    - CampcotCollectionView
+    - Cosmos
+    - PlutoView
+    - "UIImageView+Extension"
+
+SPEC CHECKSUMS:
+  CampcotCollectionView: f88caa4e844e23ec329f8a1d82453f04c16d8ea3
+  Cosmos: b5c6a9a637e28a061b54c8f8b1d8529d7d4db73f
+  PlutoView: 980db0f49608f73f0d5f0a4516a6ebf5a465c06e
+  "UIImageView+Extension": bc26c60a9c8cd6fb515ae1e37377a6f0988e76d8
+
+PODFILE CHECKSUM: 94662008845c3f408caedfabdcd911b93634c050
+
+COCOAPODS: 1.11.2

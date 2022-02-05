@@ -1,0 +1,1261 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05654E4855BB7C3E806A8F35345A4480 /* UIImageView+Extension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C2EB7B76AFE8967037F2A730820396 /* UIImageView+Extension-dummy.m */; };
+		186327423D98201D8F834C059EBDF03F /* TableViewTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B73098ED464D7CBB6E96C64FC0EFBF /* TableViewTab.swift */; };
+		1C6156B7023F7F69398B4119A0AA492B /* CosmosText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6F394560BDE5C626CC2E4F4D0C99C0 /* CosmosText.swift */; };
+		209D9DD6A82F26B8032A43B060B5D164 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		29411FD476553FC4207A0AA191150F04 /* ContentSizeAdjustmentBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167912569B1D4625E0A4F260D3E0DFB6 /* ContentSizeAdjustmentBehavior.swift */; };
+		2B0A889AE4D91F724BA7738A84C6DEF7 /* PlutoView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4891301039F81F529D70B408A1A55CFC /* PlutoView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCFA7D464D486EC1E486FFF2C21B4ED /* Cosmos-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 51C33CB697304FBB37D82E75785B72F2 /* Cosmos-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34E5C2BBAC7CA5683E14EFA47CE93B64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		39079E211569B6D69DE302E77CAA0185 /* ScrollViewTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DDFB57D736EDDD23E4A8ED952936819 /* ScrollViewTab.swift */; };
+		3AED43A0FF24D5BE6077E83B38AB6D45 /* Pods-collaspingTabbar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B92BA3CABB84372F0F558A5B94C16E59 /* Pods-collaspingTabbar-dummy.m */; };
+		3E410558A06008A95E19C2FE1D5E014E /* CosmosRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E04CDCF5DB04434513D9658E51CDF3 /* CosmosRating.swift */; };
+		449B7D4D4BD118C480786A347A377054 /* CosmosTouchTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE63B6CDA039553EF57A9E888B63FDCD /* CosmosTouchTarget.swift */; };
+		4D8675E7F1C6254904557B7FB84E1C51 /* CosmosSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B515B6F5662E48A10F1E7345E48B79A /* CosmosSettings.swift */; };
+		5855C7F85CA130BCA6306AFC20191D8E /* PaddingTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F412554739C531419E72C25D455B0937 /* PaddingTableView.swift */; };
+		5E87677262463376144E8B5F6916FCCB /* StarFillMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282AE3B60A196D149704291F5716C566 /* StarFillMode.swift */; };
+		5F3CBC22EA8A6F33B39975FA371BE423 /* CollapsedLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504292B45A8DCD4DFC3D2A9B5C7C3071 /* CollapsedLayout.swift */; };
+		60333D100E0FC97ED39E1F845D1E58FB /* CampcotCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD0C262A5FC8443EB5F5BCFD2FAA311 /* CampcotCollectionView.swift */; };
+		61773DD4962BFA6D7E38DD8A9D998A8A /* CosmosDefaultSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC7849BD64D1CE3023E04CF690C4E59 /* CosmosDefaultSettings.swift */; };
+		64991970AB6955478D7D9C25B2C2C53A /* CampcotCollectionView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D8B301E8E22ACFD8D8CE006D15E2062 /* CampcotCollectionView-dummy.m */; };
+		6557F6548B5C9A0077C19D479D4B8614 /* CampcotCollectionView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 337EC31569FB4C72AF76CAF1C4924C51 /* CampcotCollectionView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67318BB3E280E0D8FB9161E5557B71E3 /* Cosmos-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 528F2149AF1B3319D4F9AEFB7B3734A0 /* Cosmos-dummy.m */; };
+		6B25EE47AD816EB152730ACF882EA684 /* PaddingCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A224EE344608B293D8DCA8135D606E83 /* PaddingCollectionView.swift */; };
+		772B7FA4384C442360975E95D12383BA /* CosmosAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099FFAC62125180D7C982D49CC6EA36C /* CosmosAccessibility.swift */; };
+		79BA33C91F1D8EB618E80C0081FF31AE /* TabCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA70DD06FCED5B301569BCE5622B4BBC /* TabCell.swift */; };
+		7AA4F48458A149B12BCF7E8EB147E25C /* CosmosTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712AC51E5E06BA7876041B07D7636760 /* CosmosTouch.swift */; };
+		7E298ECE9B23835D17446526E27D2D67 /* StarLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA969F1FC5815EACD4C5EFCE12F5D84 /* StarLayer.swift */; };
+		80FDF5F9066CA8DB96192849DA147EEF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		8322D938B4C21C24E70FBA1B95797AC9 /* CosmosSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D3230D0935537FD383B69F1AF52C60 /* CosmosSize.swift */; };
+		89BB5B8CCC32AD3319250295E33ADD3F /* ExpandableFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A341156A5C58FE18D86E29BE529C00 /* ExpandableFlowLayout.swift */; };
+		91233DA728DEC7EE1B2F6A0E1F44A873 /* UIImageView+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 590684999A8F4D77B940A04B4750A6ED /* UIImageView+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92C4DD2EF70B515351AAF750975B4713 /* UIImageView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = B8ABD3E438677DFE8963D7644C073DC1 /* UIImageView+Extension.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9755F83E9DE9BA2CC07496C16AF80B42 /* RightToLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA2A0F7199D6B952FFE300C124A6499 /* RightToLeft.swift */; };
+		97A98B048A8201F60A9B58A3BC34144C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		99DB653A1F70EAEC3490B69E4AC9011F /* CosmosLayerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E72A7E886BF78DF2F8EAF58ACB415E /* CosmosLayerHelper.swift */; };
+		ABFB9BF862F602531FE8131A350542B0 /* CosmosLayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AB25F010CE9353F4C1B17B281171AB /* CosmosLayers.swift */; };
+		AEBFEF7A2DA75775C44AF1B5D56D599C /* ExpandedLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AB207C23D3C2952F8842A1ED9DD26D /* ExpandedLayout.swift */; };
+		B0571BEB74DBD3CF24EB78C3E3EE36CE /* PlutoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBB34201DB074F1D3845B78AAFD5FDC /* PlutoView.swift */; };
+		BC71F5A75AC2C8A817E574F33D81966C /* PlutoView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D310A4D3DE2A61850F91565E3F405CED /* PlutoView-dummy.m */; };
+		C59E79D0613D33608BEA8B2DD71958C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		CB4D7FEF62D7943C6E236467F3C516C1 /* CosmosLocalizedRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82D4F0F1BB9A8C0B7542849D155F72C /* CosmosLocalizedRating.swift */; };
+		CC7DC4ED9519F4185BD94E29C7D66779 /* CollectionViewTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652F4682706E5B16E01D5604CE9F7D30 /* CollectionViewTab.swift */; };
+		D53F879A0F52534D9655F1A6B3CE9E53 /* Pods-collaspingTabbar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A8E159A4C77E9805C4AE1E8D3BC6C2 /* Pods-collaspingTabbar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAC995774F7300784D656F55792F3630 /* PlutoView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 42BC68482A02FE452B767DF4D159D071 /* PlutoView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E63011A4376D4D0F2EF8C16D51BFFF72 /* UIImageView+Extension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CC4B335A9273218C4A440D52641A348E /* UIImageView+Extension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC1899EF909D17F47C5C0C2064BD2533 /* CosmosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8643C4B63D07513735280DB95E5A4EC /* CosmosView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0263CDD27F66A80931E481C3CCE062F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 564F815ACD3DB46D7B91E92DC2E068C3;
+			remoteInfo = PlutoView;
+		};
+		6F7229A5AFB77219AB1C28F6CBBD313C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CB783924EBDC76B087AFE8B2759EB10;
+			remoteInfo = "UIImageView+Extension";
+		};
+		7F183CBE19500C939EA8039C4A113827 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00F31BD5217A20974B5E9AAC6256D98E;
+			remoteInfo = Cosmos;
+		};
+		A1FC2EBE053F094408665E77CDD428F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5D7CB70CE211F11341E8D02ABC5C682;
+			remoteInfo = CampcotCollectionView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05C4280976BF93DA8B36818DE2E2A5E0 /* Cosmos */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Cosmos; path = Cosmos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		08A8E159A4C77E9805C4AE1E8D3BC6C2 /* Pods-collaspingTabbar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-collaspingTabbar-umbrella.h"; sourceTree = "<group>"; };
+		099FFAC62125180D7C982D49CC6EA36C /* CosmosAccessibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosAccessibility.swift; path = Cosmos/CosmosAccessibility.swift; sourceTree = "<group>"; };
+		0B7F3FCA69422763CC17047133A91866 /* Cosmos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Cosmos.release.xcconfig; sourceTree = "<group>"; };
+		0E7CE146A48961876BB7353DD7EFAD11 /* PlutoView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PlutoView; path = PlutoView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		167912569B1D4625E0A4F260D3E0DFB6 /* ContentSizeAdjustmentBehavior.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContentSizeAdjustmentBehavior.swift; path = Source/ContentSizeAdjustmentBehavior.swift; sourceTree = "<group>"; };
+		1D98723AB7C0DD98A183680E7BC371AB /* PlutoView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PlutoView.release.xcconfig; sourceTree = "<group>"; };
+		23D3230D0935537FD383B69F1AF52C60 /* CosmosSize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosSize.swift; path = Cosmos/CosmosSize.swift; sourceTree = "<group>"; };
+		282AE3B60A196D149704291F5716C566 /* StarFillMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StarFillMode.swift; path = Cosmos/StarFillMode.swift; sourceTree = "<group>"; };
+		297AA05F026C3063EAF43D4A2ABC801D /* UIImageView+Extension-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "UIImageView+Extension-Info.plist"; sourceTree = "<group>"; };
+		3284AA04D548AA43AF9BA3C6ABC01219 /* PlutoView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PlutoView-Info.plist"; sourceTree = "<group>"; };
+		337EC31569FB4C72AF76CAF1C4924C51 /* CampcotCollectionView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CampcotCollectionView-umbrella.h"; sourceTree = "<group>"; };
+		373E62A46625535D18BFBA76485502AB /* CampcotCollectionView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CampcotCollectionView.modulemap; sourceTree = "<group>"; };
+		37C25DA871855DFB8B1B6084242803CF /* UIImageView+Extension */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "UIImageView+Extension"; path = UIImageView_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42BC68482A02FE452B767DF4D159D071 /* PlutoView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PlutoView-umbrella.h"; sourceTree = "<group>"; };
+		4431A5F767B914B1616AF2AEE5E5CA3D /* Pods-collaspingTabbar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-collaspingTabbar.release.xcconfig"; sourceTree = "<group>"; };
+		45AB25F010CE9353F4C1B17B281171AB /* CosmosLayers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosLayers.swift; path = Cosmos/CosmosLayers.swift; sourceTree = "<group>"; };
+		46E06F986A1C300D62CDC973E241C8C4 /* UIImageView+Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UIImageView+Extension.release.xcconfig"; sourceTree = "<group>"; };
+		4891301039F81F529D70B408A1A55CFC /* PlutoView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PlutoView.h; path = PlutoView/PlutoView.h; sourceTree = "<group>"; };
+		4EC7849BD64D1CE3023E04CF690C4E59 /* CosmosDefaultSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosDefaultSettings.swift; path = Cosmos/CosmosDefaultSettings.swift; sourceTree = "<group>"; };
+		4FA969F1FC5815EACD4C5EFCE12F5D84 /* StarLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StarLayer.swift; path = Cosmos/StarLayer.swift; sourceTree = "<group>"; };
+		504292B45A8DCD4DFC3D2A9B5C7C3071 /* CollapsedLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollapsedLayout.swift; path = Source/CollapsedLayout.swift; sourceTree = "<group>"; };
+		50C2EB7B76AFE8967037F2A730820396 /* UIImageView+Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Extension-dummy.m"; sourceTree = "<group>"; };
+		51C33CB697304FBB37D82E75785B72F2 /* Cosmos-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cosmos-umbrella.h"; sourceTree = "<group>"; };
+		528F2149AF1B3319D4F9AEFB7B3734A0 /* Cosmos-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Cosmos-dummy.m"; sourceTree = "<group>"; };
+		54B73098ED464D7CBB6E96C64FC0EFBF /* TableViewTab.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableViewTab.swift; path = PlutoView/cells/TableViewTab.swift; sourceTree = "<group>"; };
+		590684999A8F4D77B940A04B4750A6ED /* UIImageView+Extension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+Extension.h"; path = "UIImageView+Extension/UIImageView+Extension.h"; sourceTree = "<group>"; };
+		5B515B6F5662E48A10F1E7345E48B79A /* CosmosSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosSettings.swift; path = Cosmos/CosmosSettings.swift; sourceTree = "<group>"; };
+		5F2A8C74575BCE6B38D4FA447537443F /* Pods-collaspingTabbar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-collaspingTabbar-Info.plist"; sourceTree = "<group>"; };
+		652F4682706E5B16E01D5604CE9F7D30 /* CollectionViewTab.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionViewTab.swift; path = PlutoView/cells/CollectionViewTab.swift; sourceTree = "<group>"; };
+		65CB776ED8FB1B767B23B9629C36BD1B /* PlutoView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PlutoView.modulemap; sourceTree = "<group>"; };
+		67CAECBA83B608B6D68BB692DE7BE432 /* Pods-collaspingTabbar-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-collaspingTabbar-acknowledgements.plist"; sourceTree = "<group>"; };
+		6DDFB57D736EDDD23E4A8ED952936819 /* ScrollViewTab.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollViewTab.swift; path = PlutoView/cells/ScrollViewTab.swift; sourceTree = "<group>"; };
+		701815055CD63AF5F30E6D70A142DED5 /* Pods-collaspingTabbar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-collaspingTabbar.debug.xcconfig"; sourceTree = "<group>"; };
+		712AC51E5E06BA7876041B07D7636760 /* CosmosTouch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosTouch.swift; path = Cosmos/CosmosTouch.swift; sourceTree = "<group>"; };
+		7186D34D6E63CA320D04E80F7FF21018 /* Pods-collaspingTabbar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-collaspingTabbar.modulemap"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		74EFDAF710B7F5589F312F45C9C257FF /* CampcotCollectionView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CampcotCollectionView; path = CampcotCollectionView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D6F394560BDE5C626CC2E4F4D0C99C0 /* CosmosText.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosText.swift; path = Cosmos/CosmosText.swift; sourceTree = "<group>"; };
+		7F41D734C3A85E1AF042C7432E6061C8 /* Cosmos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Cosmos.debug.xcconfig; sourceTree = "<group>"; };
+		8D8B301E8E22ACFD8D8CE006D15E2062 /* CampcotCollectionView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CampcotCollectionView-dummy.m"; sourceTree = "<group>"; };
+		9196BDFBB810D031B6217C181DE46414 /* CampcotCollectionView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CampcotCollectionView.debug.xcconfig; sourceTree = "<group>"; };
+		92A341156A5C58FE18D86E29BE529C00 /* ExpandableFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpandableFlowLayout.swift; path = PlutoView/flowLayout/ExpandableFlowLayout.swift; sourceTree = "<group>"; };
+		953E43B3A0C9DEA42D5E986C2F08AE62 /* Cosmos-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cosmos-prefix.pch"; sourceTree = "<group>"; };
+		969625CCC5B23E18238F56CEFA5E8233 /* CampcotCollectionView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CampcotCollectionView-prefix.pch"; sourceTree = "<group>"; };
+		999FB90F7A674F5A2BFEC709CBFCE8D3 /* UIImageView+Extension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "UIImageView+Extension.modulemap"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A224EE344608B293D8DCA8135D606E83 /* PaddingCollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PaddingCollectionView.swift; path = PlutoView/views/PaddingCollectionView.swift; sourceTree = "<group>"; };
+		A6E5FDF8B00BE51A3808608CE70A7BDE /* PlutoView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PlutoView-prefix.pch"; sourceTree = "<group>"; };
+		A8643C4B63D07513735280DB95E5A4EC /* CosmosView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosView.swift; path = Cosmos/CosmosView.swift; sourceTree = "<group>"; };
+		AE10CACD029E25BBF2A124A6F26B7C64 /* Pods-collaspingTabbar */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-collaspingTabbar"; path = Pods_collaspingTabbar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4E9FE104EC227880919EAF95E2180F1 /* CampcotCollectionView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CampcotCollectionView-Info.plist"; sourceTree = "<group>"; };
+		B7A806288D8EF5696C8AF394FC0CD6F4 /* Pods-collaspingTabbar-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-collaspingTabbar-frameworks.sh"; sourceTree = "<group>"; };
+		B82D4F0F1BB9A8C0B7542849D155F72C /* CosmosLocalizedRating.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosLocalizedRating.swift; path = Cosmos/CosmosLocalizedRating.swift; sourceTree = "<group>"; };
+		B8ABD3E438677DFE8963D7644C073DC1 /* UIImageView+Extension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+Extension.m"; path = "UIImageView+Extension/UIImageView+Extension.m"; sourceTree = "<group>"; };
+		B92BA3CABB84372F0F558A5B94C16E59 /* Pods-collaspingTabbar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-collaspingTabbar-dummy.m"; sourceTree = "<group>"; };
+		CC4B335A9273218C4A440D52641A348E /* UIImageView+Extension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Extension-umbrella.h"; sourceTree = "<group>"; };
+		D211FA4C9D30EE229DF7327110686144 /* Cosmos.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Cosmos.modulemap; sourceTree = "<group>"; };
+		D310A4D3DE2A61850F91565E3F405CED /* PlutoView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PlutoView-dummy.m"; sourceTree = "<group>"; };
+		D32A351A6D471416D2B89EC6FEAE479D /* UIImageView+Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UIImageView+Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		D4C20497DDAC51E4A99025C187923F4D /* PlutoView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PlutoView.debug.xcconfig; sourceTree = "<group>"; };
+		D4E72A7E886BF78DF2F8EAF58ACB415E /* CosmosLayerHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosLayerHelper.swift; path = Cosmos/CosmosLayerHelper.swift; sourceTree = "<group>"; };
+		D64BFAA714146C53937D8CCCE40CBC64 /* UIImageView+Extension-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Extension-prefix.pch"; sourceTree = "<group>"; };
+		DB30E0573F62DCBAFA6CDDF006AFA05C /* Pods-collaspingTabbar-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-collaspingTabbar-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DE63B6CDA039553EF57A9E888B63FDCD /* CosmosTouchTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosTouchTarget.swift; path = Cosmos/Helpers/CosmosTouchTarget.swift; sourceTree = "<group>"; };
+		DFD0C262A5FC8443EB5F5BCFD2FAA311 /* CampcotCollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CampcotCollectionView.swift; path = Source/CampcotCollectionView.swift; sourceTree = "<group>"; };
+		E0AB207C23D3C2952F8842A1ED9DD26D /* ExpandedLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpandedLayout.swift; path = Source/ExpandedLayout.swift; sourceTree = "<group>"; };
+		E9E04CDCF5DB04434513D9658E51CDF3 /* CosmosRating.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosRating.swift; path = Cosmos/CosmosRating.swift; sourceTree = "<group>"; };
+		EA70DD06FCED5B301569BCE5622B4BBC /* TabCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabCell.swift; path = PlutoView/cells/TabCell.swift; sourceTree = "<group>"; };
+		EEA2A0F7199D6B952FFE300C124A6499 /* RightToLeft.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RightToLeft.swift; path = Cosmos/Helpers/RightToLeft.swift; sourceTree = "<group>"; };
+		EF7F8A0BB03C795785CDE4FABC9A2331 /* Cosmos-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Cosmos-Info.plist"; sourceTree = "<group>"; };
+		F412554739C531419E72C25D455B0937 /* PaddingTableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PaddingTableView.swift; path = PlutoView/views/PaddingTableView.swift; sourceTree = "<group>"; };
+		FCABC91588B4D5256C87783AFCE8714D /* CampcotCollectionView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CampcotCollectionView.release.xcconfig; sourceTree = "<group>"; };
+		FCBB34201DB074F1D3845B78AAFD5FDC /* PlutoView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlutoView.swift; path = PlutoView/PlutoView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04D7D7C63186217133DFF91777889741 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97A98B048A8201F60A9B58A3BC34144C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A0CA7D8D89CC5A012496C01C4914888 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C59E79D0613D33608BEA8B2DD71958C7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DEC9D66D25D7967B167DEA713C2359C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				209D9DD6A82F26B8032A43B060B5D164 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2C50AAA2CC83177D621187EA23BEA67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80FDF5F9066CA8DB96192849DA147EEF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECBCB758FEB82005805AA34B647C814E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34E5C2BBAC7CA5683E14EFA47CE93B64 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25AB0C744B075F3AA3B315A9DFF05C24 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				373E62A46625535D18BFBA76485502AB /* CampcotCollectionView.modulemap */,
+				8D8B301E8E22ACFD8D8CE006D15E2062 /* CampcotCollectionView-dummy.m */,
+				B4E9FE104EC227880919EAF95E2180F1 /* CampcotCollectionView-Info.plist */,
+				969625CCC5B23E18238F56CEFA5E8233 /* CampcotCollectionView-prefix.pch */,
+				337EC31569FB4C72AF76CAF1C4924C51 /* CampcotCollectionView-umbrella.h */,
+				9196BDFBB810D031B6217C181DE46414 /* CampcotCollectionView.debug.xcconfig */,
+				FCABC91588B4D5256C87783AFCE8714D /* CampcotCollectionView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CampcotCollectionView";
+			sourceTree = "<group>";
+		};
+		265EE7C5268C2536DC65AB5728387F5E /* Cosmos */ = {
+			isa = PBXGroup;
+			children = (
+				099FFAC62125180D7C982D49CC6EA36C /* CosmosAccessibility.swift */,
+				4EC7849BD64D1CE3023E04CF690C4E59 /* CosmosDefaultSettings.swift */,
+				D4E72A7E886BF78DF2F8EAF58ACB415E /* CosmosLayerHelper.swift */,
+				45AB25F010CE9353F4C1B17B281171AB /* CosmosLayers.swift */,
+				B82D4F0F1BB9A8C0B7542849D155F72C /* CosmosLocalizedRating.swift */,
+				E9E04CDCF5DB04434513D9658E51CDF3 /* CosmosRating.swift */,
+				5B515B6F5662E48A10F1E7345E48B79A /* CosmosSettings.swift */,
+				23D3230D0935537FD383B69F1AF52C60 /* CosmosSize.swift */,
+				7D6F394560BDE5C626CC2E4F4D0C99C0 /* CosmosText.swift */,
+				712AC51E5E06BA7876041B07D7636760 /* CosmosTouch.swift */,
+				DE63B6CDA039553EF57A9E888B63FDCD /* CosmosTouchTarget.swift */,
+				A8643C4B63D07513735280DB95E5A4EC /* CosmosView.swift */,
+				EEA2A0F7199D6B952FFE300C124A6499 /* RightToLeft.swift */,
+				282AE3B60A196D149704291F5716C566 /* StarFillMode.swift */,
+				4FA969F1FC5815EACD4C5EFCE12F5D84 /* StarLayer.swift */,
+				8681035452E27D77019525268868DF1F /* Support Files */,
+			);
+			name = Cosmos;
+			path = Cosmos;
+			sourceTree = "<group>";
+		};
+		3DDD60130536B4BB6D4D8284046D131D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				74EFDAF710B7F5589F312F45C9C257FF /* CampcotCollectionView */,
+				05C4280976BF93DA8B36818DE2E2A5E0 /* Cosmos */,
+				0E7CE146A48961876BB7353DD7EFAD11 /* PlutoView */,
+				AE10CACD029E25BBF2A124A6F26B7C64 /* Pods-collaspingTabbar */,
+				37C25DA871855DFB8B1B6084242803CF /* UIImageView+Extension */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B41EF9873C56D83C0037021B9979963 /* PlutoView */ = {
+			isa = PBXGroup;
+			children = (
+				652F4682706E5B16E01D5604CE9F7D30 /* CollectionViewTab.swift */,
+				92A341156A5C58FE18D86E29BE529C00 /* ExpandableFlowLayout.swift */,
+				A224EE344608B293D8DCA8135D606E83 /* PaddingCollectionView.swift */,
+				F412554739C531419E72C25D455B0937 /* PaddingTableView.swift */,
+				4891301039F81F529D70B408A1A55CFC /* PlutoView.h */,
+				FCBB34201DB074F1D3845B78AAFD5FDC /* PlutoView.swift */,
+				6DDFB57D736EDDD23E4A8ED952936819 /* ScrollViewTab.swift */,
+				EA70DD06FCED5B301569BCE5622B4BBC /* TabCell.swift */,
+				54B73098ED464D7CBB6E96C64FC0EFBF /* TableViewTab.swift */,
+				DDAEED0C34EBC1810D14E5B66633100E /* Support Files */,
+			);
+			name = PlutoView;
+			path = PlutoView;
+			sourceTree = "<group>";
+		};
+		511B13C9A5D399178E756972AC719F9E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				52782B091A39600B5A73096192ABA90E /* Pods-collaspingTabbar */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		52782B091A39600B5A73096192ABA90E /* Pods-collaspingTabbar */ = {
+			isa = PBXGroup;
+			children = (
+				7186D34D6E63CA320D04E80F7FF21018 /* Pods-collaspingTabbar.modulemap */,
+				DB30E0573F62DCBAFA6CDDF006AFA05C /* Pods-collaspingTabbar-acknowledgements.markdown */,
+				67CAECBA83B608B6D68BB692DE7BE432 /* Pods-collaspingTabbar-acknowledgements.plist */,
+				B92BA3CABB84372F0F558A5B94C16E59 /* Pods-collaspingTabbar-dummy.m */,
+				B7A806288D8EF5696C8AF394FC0CD6F4 /* Pods-collaspingTabbar-frameworks.sh */,
+				5F2A8C74575BCE6B38D4FA447537443F /* Pods-collaspingTabbar-Info.plist */,
+				08A8E159A4C77E9805C4AE1E8D3BC6C2 /* Pods-collaspingTabbar-umbrella.h */,
+				701815055CD63AF5F30E6D70A142DED5 /* Pods-collaspingTabbar.debug.xcconfig */,
+				4431A5F767B914B1616AF2AEE5E5CA3D /* Pods-collaspingTabbar.release.xcconfig */,
+			);
+			name = "Pods-collaspingTabbar";
+			path = "Target Support Files/Pods-collaspingTabbar";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		709DF3BE8FA58968178F4EA2F9D0EF29 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				999FB90F7A674F5A2BFEC709CBFCE8D3 /* UIImageView+Extension.modulemap */,
+				50C2EB7B76AFE8967037F2A730820396 /* UIImageView+Extension-dummy.m */,
+				297AA05F026C3063EAF43D4A2ABC801D /* UIImageView+Extension-Info.plist */,
+				D64BFAA714146C53937D8CCCE40CBC64 /* UIImageView+Extension-prefix.pch */,
+				CC4B335A9273218C4A440D52641A348E /* UIImageView+Extension-umbrella.h */,
+				D32A351A6D471416D2B89EC6FEAE479D /* UIImageView+Extension.debug.xcconfig */,
+				46E06F986A1C300D62CDC973E241C8C4 /* UIImageView+Extension.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UIImageView+Extension";
+			sourceTree = "<group>";
+		};
+		7DAE593D8F6025C758F579D5C2CBE36D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8FEE1DDACC676E293DD06A8B581A08E2 /* CampcotCollectionView */,
+				265EE7C5268C2536DC65AB5728387F5E /* Cosmos */,
+				4B41EF9873C56D83C0037021B9979963 /* PlutoView */,
+				D69CBB87484FCCD3D456D8D45EE2E195 /* UIImageView+Extension */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8681035452E27D77019525268868DF1F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D211FA4C9D30EE229DF7327110686144 /* Cosmos.modulemap */,
+				528F2149AF1B3319D4F9AEFB7B3734A0 /* Cosmos-dummy.m */,
+				EF7F8A0BB03C795785CDE4FABC9A2331 /* Cosmos-Info.plist */,
+				953E43B3A0C9DEA42D5E986C2F08AE62 /* Cosmos-prefix.pch */,
+				51C33CB697304FBB37D82E75785B72F2 /* Cosmos-umbrella.h */,
+				7F41D734C3A85E1AF042C7432E6061C8 /* Cosmos.debug.xcconfig */,
+				0B7F3FCA69422763CC17047133A91866 /* Cosmos.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Cosmos";
+			sourceTree = "<group>";
+		};
+		8FEE1DDACC676E293DD06A8B581A08E2 /* CampcotCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				DFD0C262A5FC8443EB5F5BCFD2FAA311 /* CampcotCollectionView.swift */,
+				504292B45A8DCD4DFC3D2A9B5C7C3071 /* CollapsedLayout.swift */,
+				167912569B1D4625E0A4F260D3E0DFB6 /* ContentSizeAdjustmentBehavior.swift */,
+				E0AB207C23D3C2952F8842A1ED9DD26D /* ExpandedLayout.swift */,
+				25AB0C744B075F3AA3B315A9DFF05C24 /* Support Files */,
+			);
+			name = CampcotCollectionView;
+			path = CampcotCollectionView;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				7DAE593D8F6025C758F579D5C2CBE36D /* Pods */,
+				3DDD60130536B4BB6D4D8284046D131D /* Products */,
+				511B13C9A5D399178E756972AC719F9E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D69CBB87484FCCD3D456D8D45EE2E195 /* UIImageView+Extension */ = {
+			isa = PBXGroup;
+			children = (
+				590684999A8F4D77B940A04B4750A6ED /* UIImageView+Extension.h */,
+				B8ABD3E438677DFE8963D7644C073DC1 /* UIImageView+Extension.m */,
+				709DF3BE8FA58968178F4EA2F9D0EF29 /* Support Files */,
+			);
+			name = "UIImageView+Extension";
+			path = "UIImageView+Extension";
+			sourceTree = "<group>";
+		};
+		DDAEED0C34EBC1810D14E5B66633100E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				65CB776ED8FB1B767B23B9629C36BD1B /* PlutoView.modulemap */,
+				D310A4D3DE2A61850F91565E3F405CED /* PlutoView-dummy.m */,
+				3284AA04D548AA43AF9BA3C6ABC01219 /* PlutoView-Info.plist */,
+				A6E5FDF8B00BE51A3808608CE70A7BDE /* PlutoView-prefix.pch */,
+				42BC68482A02FE452B767DF4D159D071 /* PlutoView-umbrella.h */,
+				D4C20497DDAC51E4A99025C187923F4D /* PlutoView.debug.xcconfig */,
+				1D98723AB7C0DD98A183680E7BC371AB /* PlutoView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PlutoView";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2A0E58DBFBAB7EBF8E56D55F8957CFE8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91233DA728DEC7EE1B2F6A0E1F44A873 /* UIImageView+Extension.h in Headers */,
+				E63011A4376D4D0F2EF8C16D51BFFF72 /* UIImageView+Extension-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40097E5779029102CCD9C3E4EE752DDF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FCFA7D464D486EC1E486FFF2C21B4ED /* Cosmos-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C05C7AA74B804B6EC57CC7DEB4FFEC3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6557F6548B5C9A0077C19D479D4B8614 /* CampcotCollectionView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4F631CCD38BC226A95B3CF3128DB73F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B0A889AE4D91F724BA7738A84C6DEF7 /* PlutoView.h in Headers */,
+				DAC995774F7300784D656F55792F3630 /* PlutoView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBA45FE89808E05D26DD4642976ECC42 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D53F879A0F52534D9655F1A6B3CE9E53 /* Pods-collaspingTabbar-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		00F31BD5217A20974B5E9AAC6256D98E /* Cosmos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5531D3CEF3EBE4420E9BFCEFA9DD7F6 /* Build configuration list for PBXNativeTarget "Cosmos" */;
+			buildPhases = (
+				40097E5779029102CCD9C3E4EE752DDF /* Headers */,
+				B1B8AB666CBBC24142B5B2D2C578F7E6 /* Sources */,
+				6DEC9D66D25D7967B167DEA713C2359C /* Frameworks */,
+				C77B64B25EBB18C8D211C061D92B0B4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cosmos;
+			productName = Cosmos;
+			productReference = 05C4280976BF93DA8B36818DE2E2A5E0 /* Cosmos */;
+			productType = "com.apple.product-type.framework";
+		};
+		2CB783924EBDC76B087AFE8B2759EB10 /* UIImageView+Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE4AFD03929A4C051FDC9ECE2DAAFF7E /* Build configuration list for PBXNativeTarget "UIImageView+Extension" */;
+			buildPhases = (
+				2A0E58DBFBAB7EBF8E56D55F8957CFE8 /* Headers */,
+				FDE9FCEB20DB5859DE52D5C5E3D37BE9 /* Sources */,
+				ECBCB758FEB82005805AA34B647C814E /* Frameworks */,
+				812522AB6516C38425B89E107D8DFF40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UIImageView+Extension";
+			productName = UIImageView_Extension;
+			productReference = 37C25DA871855DFB8B1B6084242803CF /* UIImageView+Extension */;
+			productType = "com.apple.product-type.framework";
+		};
+		564F815ACD3DB46D7B91E92DC2E068C3 /* PlutoView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62845F48FEC8CA09479AFD82425D99CB /* Build configuration list for PBXNativeTarget "PlutoView" */;
+			buildPhases = (
+				C4F631CCD38BC226A95B3CF3128DB73F /* Headers */,
+				AC5FF568F17E4AE132642007804A2DBD /* Sources */,
+				04D7D7C63186217133DFF91777889741 /* Frameworks */,
+				8ECEE569B684E8A2EBF13CC52B9BB4F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlutoView;
+			productName = PlutoView;
+			productReference = 0E7CE146A48961876BB7353DD7EFAD11 /* PlutoView */;
+			productType = "com.apple.product-type.framework";
+		};
+		CCC7ABE32DEE116C35DEE4C22F165F7D /* Pods-collaspingTabbar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4B98E0D72C364AF994C88BE4D76DECC /* Build configuration list for PBXNativeTarget "Pods-collaspingTabbar" */;
+			buildPhases = (
+				CBA45FE89808E05D26DD4642976ECC42 /* Headers */,
+				0F992124E7E86BBC4DA8A89F93751EA0 /* Sources */,
+				2A0CA7D8D89CC5A012496C01C4914888 /* Frameworks */,
+				27C021E16AB68B48AAF6296145B849D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9CA0E8A15055C59BCD540A3B314D242A /* PBXTargetDependency */,
+				6D4CB834B6DDB0C5C2ECA85585906654 /* PBXTargetDependency */,
+				BFCF0D36E079AD16C0C10B5AE2CC73FE /* PBXTargetDependency */,
+				F36CE805C907D2B7A0AEF24EB7254145 /* PBXTargetDependency */,
+			);
+			name = "Pods-collaspingTabbar";
+			productName = Pods_collaspingTabbar;
+			productReference = AE10CACD029E25BBF2A124A6F26B7C64 /* Pods-collaspingTabbar */;
+			productType = "com.apple.product-type.framework";
+		};
+		F5D7CB70CE211F11341E8D02ABC5C682 /* CampcotCollectionView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12A80F27ED356964336238ADBB9E3131 /* Build configuration list for PBXNativeTarget "CampcotCollectionView" */;
+			buildPhases = (
+				7C05C7AA74B804B6EC57CC7DEB4FFEC3 /* Headers */,
+				EAF5DEBA4DCACAD3CD1821F73BF4ADDE /* Sources */,
+				D2C50AAA2CC83177D621187EA23BEA67 /* Frameworks */,
+				28C95ABDCF0C0378F98FE9147D83A686 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CampcotCollectionView;
+			productName = CampcotCollectionView;
+			productReference = 74EFDAF710B7F5589F312F45C9C257FF /* CampcotCollectionView */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 3DDD60130536B4BB6D4D8284046D131D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5D7CB70CE211F11341E8D02ABC5C682 /* CampcotCollectionView */,
+				00F31BD5217A20974B5E9AAC6256D98E /* Cosmos */,
+				564F815ACD3DB46D7B91E92DC2E068C3 /* PlutoView */,
+				CCC7ABE32DEE116C35DEE4C22F165F7D /* Pods-collaspingTabbar */,
+				2CB783924EBDC76B087AFE8B2759EB10 /* UIImageView+Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		27C021E16AB68B48AAF6296145B849D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28C95ABDCF0C0378F98FE9147D83A686 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		812522AB6516C38425B89E107D8DFF40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ECEE569B684E8A2EBF13CC52B9BB4F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C77B64B25EBB18C8D211C061D92B0B4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F992124E7E86BBC4DA8A89F93751EA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AED43A0FF24D5BE6077E83B38AB6D45 /* Pods-collaspingTabbar-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC5FF568F17E4AE132642007804A2DBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC7DC4ED9519F4185BD94E29C7D66779 /* CollectionViewTab.swift in Sources */,
+				89BB5B8CCC32AD3319250295E33ADD3F /* ExpandableFlowLayout.swift in Sources */,
+				6B25EE47AD816EB152730ACF882EA684 /* PaddingCollectionView.swift in Sources */,
+				5855C7F85CA130BCA6306AFC20191D8E /* PaddingTableView.swift in Sources */,
+				B0571BEB74DBD3CF24EB78C3E3EE36CE /* PlutoView.swift in Sources */,
+				BC71F5A75AC2C8A817E574F33D81966C /* PlutoView-dummy.m in Sources */,
+				39079E211569B6D69DE302E77CAA0185 /* ScrollViewTab.swift in Sources */,
+				79BA33C91F1D8EB618E80C0081FF31AE /* TabCell.swift in Sources */,
+				186327423D98201D8F834C059EBDF03F /* TableViewTab.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1B8AB666CBBC24142B5B2D2C578F7E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67318BB3E280E0D8FB9161E5557B71E3 /* Cosmos-dummy.m in Sources */,
+				772B7FA4384C442360975E95D12383BA /* CosmosAccessibility.swift in Sources */,
+				61773DD4962BFA6D7E38DD8A9D998A8A /* CosmosDefaultSettings.swift in Sources */,
+				99DB653A1F70EAEC3490B69E4AC9011F /* CosmosLayerHelper.swift in Sources */,
+				ABFB9BF862F602531FE8131A350542B0 /* CosmosLayers.swift in Sources */,
+				CB4D7FEF62D7943C6E236467F3C516C1 /* CosmosLocalizedRating.swift in Sources */,
+				3E410558A06008A95E19C2FE1D5E014E /* CosmosRating.swift in Sources */,
+				4D8675E7F1C6254904557B7FB84E1C51 /* CosmosSettings.swift in Sources */,
+				8322D938B4C21C24E70FBA1B95797AC9 /* CosmosSize.swift in Sources */,
+				1C6156B7023F7F69398B4119A0AA492B /* CosmosText.swift in Sources */,
+				7AA4F48458A149B12BCF7E8EB147E25C /* CosmosTouch.swift in Sources */,
+				449B7D4D4BD118C480786A347A377054 /* CosmosTouchTarget.swift in Sources */,
+				EC1899EF909D17F47C5C0C2064BD2533 /* CosmosView.swift in Sources */,
+				9755F83E9DE9BA2CC07496C16AF80B42 /* RightToLeft.swift in Sources */,
+				5E87677262463376144E8B5F6916FCCB /* StarFillMode.swift in Sources */,
+				7E298ECE9B23835D17446526E27D2D67 /* StarLayer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAF5DEBA4DCACAD3CD1821F73BF4ADDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60333D100E0FC97ED39E1F845D1E58FB /* CampcotCollectionView.swift in Sources */,
+				64991970AB6955478D7D9C25B2C2C53A /* CampcotCollectionView-dummy.m in Sources */,
+				5F3CBC22EA8A6F33B39975FA371BE423 /* CollapsedLayout.swift in Sources */,
+				29411FD476553FC4207A0AA191150F04 /* ContentSizeAdjustmentBehavior.swift in Sources */,
+				AEBFEF7A2DA75775C44AF1B5D56D599C /* ExpandedLayout.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDE9FCEB20DB5859DE52D5C5E3D37BE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92C4DD2EF70B515351AAF750975B4713 /* UIImageView+Extension.m in Sources */,
+				05654E4855BB7C3E806A8F35345A4480 /* UIImageView+Extension-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6D4CB834B6DDB0C5C2ECA85585906654 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Cosmos;
+			target = 00F31BD5217A20974B5E9AAC6256D98E /* Cosmos */;
+			targetProxy = 7F183CBE19500C939EA8039C4A113827 /* PBXContainerItemProxy */;
+		};
+		9CA0E8A15055C59BCD540A3B314D242A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CampcotCollectionView;
+			target = F5D7CB70CE211F11341E8D02ABC5C682 /* CampcotCollectionView */;
+			targetProxy = A1FC2EBE053F094408665E77CDD428F5 /* PBXContainerItemProxy */;
+		};
+		BFCF0D36E079AD16C0C10B5AE2CC73FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PlutoView;
+			target = 564F815ACD3DB46D7B91E92DC2E068C3 /* PlutoView */;
+			targetProxy = 0263CDD27F66A80931E481C3CCE062F9 /* PBXContainerItemProxy */;
+		};
+		F36CE805C907D2B7A0AEF24EB7254145 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "UIImageView+Extension";
+			target = 2CB783924EBDC76B087AFE8B2759EB10 /* UIImageView+Extension */;
+			targetProxy = 6F7229A5AFB77219AB1C28F6CBBD313C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		032495F165AE153C09D43264CE7B4D41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 701815055CD63AF5F30E6D70A142DED5 /* Pods-collaspingTabbar.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-collaspingTabbar/Pods-collaspingTabbar-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-collaspingTabbar/Pods-collaspingTabbar.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3B2E329A5DE2CF42444B1D82AB0A7DFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46E06F986A1C300D62CDC973E241C8C4 /* UIImageView+Extension.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UIImageView+Extension/UIImageView+Extension-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIImageView+Extension/UIImageView+Extension-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/UIImageView+Extension/UIImageView+Extension.modulemap";
+				PRODUCT_MODULE_NAME = UIImageView_Extension;
+				PRODUCT_NAME = UIImageView_Extension;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4214E6946993DF02ED98D89047C64016 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		4A3CDF876F6000874964C98B59D0D5AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4431A5F767B914B1616AF2AEE5E5CA3D /* Pods-collaspingTabbar.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-collaspingTabbar/Pods-collaspingTabbar-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-collaspingTabbar/Pods-collaspingTabbar.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6317C3CE6B4E2B5F48FBD73DD9C7B878 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D98723AB7C0DD98A183680E7BC371AB /* PlutoView.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PlutoView/PlutoView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PlutoView/PlutoView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PlutoView/PlutoView.modulemap";
+				PRODUCT_MODULE_NAME = PlutoView;
+				PRODUCT_NAME = PlutoView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6EC69149E28F5E27C4706FFEAF8B58F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F41D734C3A85E1AF042C7432E6061C8 /* Cosmos.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Cosmos/Cosmos-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Cosmos/Cosmos-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Cosmos/Cosmos.modulemap";
+				PRODUCT_MODULE_NAME = Cosmos;
+				PRODUCT_NAME = Cosmos;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		840D5B6595B885ABA170D6A27A6FA3FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9196BDFBB810D031B6217C181DE46414 /* CampcotCollectionView.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CampcotCollectionView/CampcotCollectionView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CampcotCollectionView/CampcotCollectionView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CampcotCollectionView/CampcotCollectionView.modulemap";
+				PRODUCT_MODULE_NAME = CampcotCollectionView;
+				PRODUCT_NAME = CampcotCollectionView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AA1D4DF9BE2ABB0D74569D6E52C93D57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4C20497DDAC51E4A99025C187923F4D /* PlutoView.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PlutoView/PlutoView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PlutoView/PlutoView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PlutoView/PlutoView.modulemap";
+				PRODUCT_MODULE_NAME = PlutoView;
+				PRODUCT_NAME = PlutoView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B4EC34E2D26195FFA5893C70A57E2438 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCABC91588B4D5256C87783AFCE8714D /* CampcotCollectionView.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CampcotCollectionView/CampcotCollectionView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CampcotCollectionView/CampcotCollectionView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CampcotCollectionView/CampcotCollectionView.modulemap";
+				PRODUCT_MODULE_NAME = CampcotCollectionView;
+				PRODUCT_NAME = CampcotCollectionView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C78C1BA85703BCE69743B7C85B847990 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B7F3FCA69422763CC17047133A91866 /* Cosmos.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Cosmos/Cosmos-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Cosmos/Cosmos-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Cosmos/Cosmos.modulemap";
+				PRODUCT_MODULE_NAME = Cosmos;
+				PRODUCT_NAME = Cosmos;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CD85FD90473CFBE797E4264E7BBC70AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		E28C66D7329417B0F7CE672A49EA687C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D32A351A6D471416D2B89EC6FEAE479D /* UIImageView+Extension.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UIImageView+Extension/UIImageView+Extension-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIImageView+Extension/UIImageView+Extension-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/UIImageView+Extension/UIImageView+Extension.modulemap";
+				PRODUCT_MODULE_NAME = UIImageView_Extension;
+				PRODUCT_NAME = UIImageView_Extension;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12A80F27ED356964336238ADBB9E3131 /* Build configuration list for PBXNativeTarget "CampcotCollectionView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				840D5B6595B885ABA170D6A27A6FA3FD /* Debug */,
+				B4EC34E2D26195FFA5893C70A57E2438 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4214E6946993DF02ED98D89047C64016 /* Debug */,
+				CD85FD90473CFBE797E4264E7BBC70AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62845F48FEC8CA09479AFD82425D99CB /* Build configuration list for PBXNativeTarget "PlutoView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA1D4DF9BE2ABB0D74569D6E52C93D57 /* Debug */,
+				6317C3CE6B4E2B5F48FBD73DD9C7B878 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE4AFD03929A4C051FDC9ECE2DAAFF7E /* Build configuration list for PBXNativeTarget "UIImageView+Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E28C66D7329417B0F7CE672A49EA687C /* Debug */,
+				3B2E329A5DE2CF42444B1D82AB0A7DFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5531D3CEF3EBE4420E9BFCEFA9DD7F6 /* Build configuration list for PBXNativeTarget "Cosmos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EC69149E28F5E27C4706FFEAF8B58F4 /* Debug */,
+				C78C1BA85703BCE69743B7C85B847990 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4B98E0D72C364AF994C88BE4D76DECC /* Build configuration list for PBXNativeTarget "Pods-collaspingTabbar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				032495F165AE153C09D43264CE7B4D41 /* Debug */,
+				4A3CDF876F6000874964C98B59D0D5AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

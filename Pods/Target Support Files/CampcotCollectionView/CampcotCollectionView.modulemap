@@ -1,0 +1,6 @@
+framework module CampcotCollectionView {
+  umbrella header "CampcotCollectionView-umbrella.h"
+
+  export *
+  module * { export * }
+}
