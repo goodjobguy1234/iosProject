@@ -11,31 +11,36 @@ enum ListType: Int {
     case lendings, borrows, reviews
 }
 
-enum ProfileData {
-    struct LendingData {
-        var name: String
-    }
-
-    struct BorrowingData {
-        var name: String
-    }
-
-    struct ReviewData {
-        var reviewString: String
-    }
-    
-    case lending(LendingData)
-    case borrow(BorrowingData)
-    case review(ReviewData)
+struct LendingData: ProfileData {
+    var name: String
 }
+
+struct BorrowingData: ProfileData {
+    var name: String
+}
+
+struct ReviewData: ProfileData {
+    var reviewString: String
+}
+
+protocol ProfileData {
+    
+}
+//enum ProfileData {
+//
+//
+//    case lending(LendingData)
+//    case borrow(BorrowingData)
+//    case review(ReviewData)
+//}
 
 class ViewModel {
     let tabs: [ListType] = [.lendings, .borrows, .reviews]
-    var lendingList: [ProfileData]!
-    var borrowList: [ProfileData]!
-    var reviewList: [ProfileData]!
+    var lendingList: [LendingData]!
+    var borrowList: [BorrowingData]!
+    var reviewList: [ReviewData]!
     
-    init(lending: [ProfileData] = [], borrows: [ProfileData] = [], reviews: [ProfileData] = []) {
+    init(lending: [LendingData] = [], borrows: [BorrowingData] = [], reviews: [ReviewData] = []) {
         lendingList = lending
         borrowList = borrows
         reviewList = reviews
@@ -59,9 +64,9 @@ class ViewModel {
 
     func element(at index: Int, for listType: ListType) -> ProfileData {
        switch listType {
-       case .lendings: return lendingList[index]
-       case .borrows: return borrowList[index]
-       case .reviews: return reviewList[index]
+       case .lendings: return lendingList[index] as! ProfileData
+       case .borrows: return borrowList[index] as! ProfileData
+       case .reviews: return reviewList[index] as! ProfileData
        }
    }
 }

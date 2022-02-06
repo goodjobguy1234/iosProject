@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		80ECFDB01BD6907246A5A798 /* Pods_collaspingTabbar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 553EEDE43149552BD7A4ACC9 /* Pods_collaspingTabbar.framework */; };
+		FA46541427AEDD04003B6995 /* ColumnFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA46541327AEDD04003B6995 /* ColumnFlowLayout.swift */; };
 		FAC3E79A27AB161700EA606A /* TabCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC3E79927AB161700EA606A /* TabCollectionViewCell.swift */; };
 		FAC3E79C27AB163100EA606A /* DataItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC3E79B27AB163100EA606A /* DataItemCollectionViewCell.swift */; };
 		FACC2C8627AB2553009E6C97 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC2C8527AB2553009E6C97 /* ViewController2.swift */; };
@@ -25,6 +26,7 @@
 		23B1FC1A2E7AA6788D718192 /* Pods-collaspingTabbar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-collaspingTabbar.debug.xcconfig"; path = "Target Support Files/Pods-collaspingTabbar/Pods-collaspingTabbar.debug.xcconfig"; sourceTree = "<group>"; };
 		553EEDE43149552BD7A4ACC9 /* Pods_collaspingTabbar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_collaspingTabbar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F092A5AC8CC3BBAEDB80F51A /* Pods-collaspingTabbar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-collaspingTabbar.release.xcconfig"; path = "Target Support Files/Pods-collaspingTabbar/Pods-collaspingTabbar.release.xcconfig"; sourceTree = "<group>"; };
+		FA46541327AEDD04003B6995 /* ColumnFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColumnFlowLayout.swift; sourceTree = "<group>"; };
 		FAC3E79927AB161700EA606A /* TabCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCollectionViewCell.swift; sourceTree = "<group>"; };
 		FAC3E79B27AB163100EA606A /* DataItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		FACC2C8527AB2553009E6C97 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				FAC3E79927AB161700EA606A /* TabCollectionViewCell.swift */,
 				FAC3E79B27AB163100EA606A /* DataItemCollectionViewCell.swift */,
 				FACC2C8527AB2553009E6C97 /* ViewController2.swift */,
+				FA46541327AEDD04003B6995 /* ColumnFlowLayout.swift */,
 			);
 			path = collaspingTabbar;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAD0024B27A9211900E7E0D2 /* ViewController.swift in Sources */,
+				FA46541427AEDD04003B6995 /* ColumnFlowLayout.swift in Sources */,
 				FACC2C8627AB2553009E6C97 /* ViewController2.swift in Sources */,
 				FAC3E79C27AB163100EA606A /* DataItemCollectionViewCell.swift in Sources */,
 				FAE0743E27A94252002FD560 /* CustomUIView.swift in Sources */,

@@ -7,6 +7,11 @@
 
 import UIKit
 
-class DataItemCollectionViewCell: UICollectionViewCell {
+class DataItemCollectionViewCell: UICollectionViewCell{
     
+    @IBOutlet var itemQuality: UILabel!
+    @IBOutlet var itemOwner: UILabel!
+    @IBOutlet var itemName: UILabel!
+    @IBOutlet var imageItem: UIImageView!
+    @IBOutlet var itemPrice: UILabel!
 }
