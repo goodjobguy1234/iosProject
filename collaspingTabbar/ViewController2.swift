@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController2: UIViewController {
 
+    @IBOutlet var distributeUIView: UIView!
     @IBOutlet var contentViewShadow: UIView!
     @IBOutlet var contentView: UIView!
     @IBOutlet var headerView: UIView!
@@ -18,19 +19,36 @@ class ViewController2: UIViewController {
     
     private var viewModel:ViewModel!
     private var lastContentOffset: CGFloat = 0.0
+
     
     private var lendingList: [LendingData] = [
-     LendingData(name: "test1"),
-     LendingData(name: "test2"),
-     LendingData(name: "test3"),
-     LendingData(name: "test4"),
-     LendingData(name: "test5"),
-     LendingData(name: "test6")
+        LendingData(name: "test1", pricePerMin: 300, status: .unavaliable, owner: "Thitare Nimanong", quanlity: "Fair"),
+     LendingData(name: "test2", pricePerMin: 100, status: .avaliable, owner: "Thitare Nimanong", quanlity: "Fair"),
+     LendingData(name: "test3", pricePerMin: 400, status: .avaliable, owner: "Thitare Nimanong", quanlity: "Fair"),
+     LendingData(name: "test4", pricePerMin: 3400, status: .unavaliable, owner: "Thitare Nimanong", quanlity: "Fair"),
+     LendingData(name: "test5", pricePerMin: 250, status: .avaliable, owner: "Thitare Nimanong", quanlity: "Fair"),
+     LendingData(name: "test6", pricePerMin: 200, status: .unavaliable, owner: "Thitare Nimanong", quanlity: "Fair")
     ]
     
     private var borrowingList: [BorrowingData] = [
-     BorrowingData(name: "test"),
-     BorrowingData(name: "test2"),BorrowingData(name: "test3"),BorrowingData(name: "test4"),BorrowingData(name: "test5"),BorrowingData(name: "test6"),BorrowingData(name: "test7"),BorrowingData(name: "test8"),BorrowingData(name: "test9"),BorrowingData(name: "test10"),BorrowingData(name: "test11"),BorrowingData(name: "test12"),BorrowingData(name: "test13"),BorrowingData(name: "test14"),BorrowingData(name: "test15"),BorrowingData(name: "test16"),BorrowingData(name: "test17"),BorrowingData(name: "test18"),
+     BorrowingData(name: "test1", pricePerMin: 100, owner: "Thitare Nimanong", quanlity: "Fair"),
+     BorrowingData(name: "test2", pricePerMin: 200, owner: "Thitare Nimanong", quanlity: "Fair"),
+     BorrowingData(name: "test3", pricePerMin: 300, owner: "Thitare Nimanong", quanlity: "Fair"),
+     BorrowingData(name: "test4", pricePerMin: 400, owner: "Thitare Nimanong", quanlity: "Fair"),
+     BorrowingData(name: "test5", pricePerMin: 500, owner: "Thitare Nimanong", quanlity: "Fair"),
+     BorrowingData(name: "test6", pricePerMin: 150, owner: "Thitare Nimanong", quanlity: "Fair"),
+     BorrowingData(name: "test7", pricePerMin: 160, owner: "Thitare Nimanong", quanlity: "Fair"),
+     BorrowingData(name: "test8", pricePerMin: 190, owner: "Thitare Nimanong", quanlity: "Fair"),
+     BorrowingData(name: "test9", pricePerMin: 210, owner: "Thitare Nimanong", quanlity: "Fair"),
+     BorrowingData(name: "test10", pricePerMin: 250, owner: "Thitare Nimanong", quanlity: "Fair"),
+     BorrowingData(name: "test11", pricePerMin: 340, owner: "Thitare Nimanong", quanlity: "Fair"),
+     BorrowingData(name: "test12", pricePerMin: 300, owner: "Thitare Nimanong", quanlity: "Fair"),
+     BorrowingData(name: "test13", pricePerMin: 260, owner: "Thitare Nimanong", quanlity: "Fair"),
+     BorrowingData(name: "test14", pricePerMin: 250, owner: "Thitare Nimanong", quanlity: "Fair"),
+     BorrowingData(name: "test15", pricePerMin: 280, owner: "Thitare Nimanong", quanlity: "Fair"),
+     BorrowingData(name: "test16", pricePerMin: 350, owner: "Thitare Nimanong", quanlity: "Fair"),
+     BorrowingData(name: "test17", pricePerMin: 380, owner: "Thitare Nimanong", quanlity: "Fair"),
+     BorrowingData(name: "test18", pricePerMin: 410, owner: "Thitare Nimanong", quanlity: "Fair"),
     ]
     
     private var reviewList: [ReviewData] = [
@@ -55,12 +73,10 @@ class ViewController2: UIViewController {
         viewModel = ViewModel(lending: lendingList, borrows: borrowingList, reviews: reviewList)
         
         self.collectionViewTabbar.selectItem(at: IndexPath(row: 0, section: 0), animated: false, scrollPosition: .left)
-        
-        let columnLayout = ColumnFlowLayout(cellsPerRow: 2, minimumInteritemSpacing: 10, minimumLineSpacing: 19)
-        
-        collectionViewData?.collectionViewLayout = columnLayout
-        collectionViewData?.contentInsetAdjustmentBehavior = .always
-        
+    
+        distributeUIView.layer.cornerRadius = 16
+        distributeUIView.layer.borderWidth = 1.0
+        distributeUIView.layer.borderColor = UIColor.lightGray.cgColor
         
         contentView.layer.cornerRadius = 20
 
@@ -69,13 +85,36 @@ class ViewController2: UIViewController {
         contentViewShadow.layer.shadowColor = UIColor.black.cgColor
         contentViewShadow.layer.shadowOpacity = 0.5
         contentViewShadow.layer.shadowRadius = 4
-
-
+        
+        headerView.isUserInteractionEnabled = true
+        headerView.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture(_:))))
     }
+    
+    @objc private func handlePanGesture (_ gesture : UIPanGestureRecognizer ) {
+        let translation = gesture.translation(in: headerView)
+       gesture.setTranslation(CGPoint(x: translation.x , y: 0.0), in:
+                                headerView)
+       if translation.y > 0 &&
+            highConstraint.constant == 300.0 {
+           return
+        }
+       if translation.y < 0 &&
+            highConstraint.constant == 0.0 {
+           return
+       }
+        if let cell = collectionViewData.visibleCells.first as?
+               DataItemCollectionViewCell {
+            collectionViewData.contentOffset.y =
+                collectionViewData.contentOffset.y - translation.y
+         }
+    }
+
     
 }
 
 extension ViewController2: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if (collectionView == collectionViewTabbar) {
             return viewModel.numberOfTabs()
@@ -83,13 +122,14 @@ extension ViewController2: UICollectionViewDataSource, UICollectionViewDelegate,
         
         if let selectedIndex = collectionViewTabbar.indexPathsForSelectedItems?.first?.row, let listType = ListType(rawValue: selectedIndex) {
             return self.viewModel.numberOfRows(for: listType)
+
         }
         return 0
     }
     
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        return CGSize(width: 180, height: 280)
-//    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 184, height: 261)
+    }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionViewTabbar.dequeueReusableCell(withReuseIdentifier: "tabcell", for: indexPath) as! TabCollectionViewCell
@@ -112,11 +152,23 @@ extension ViewController2: UICollectionViewDataSource, UICollectionViewDelegate,
                 if(listType == .borrows) {
                     if let item = self.viewModel.element(at: indexPath.row, for: listType) as? BorrowingData {
                         cell2.itemName?.text = item.name
+                        cell2.itemOwner?.text = item.owner
+                        cell2.itemPrice?.text = "฿\(item.pricePerMin)"
+                        cell2.itemQuality?.text = item.quanlity
+                        cell2.itemStatus?.isHidden = true
                     }
                     
                 } else if (listType == .lendings) {
                     if let item = self.viewModel.element(at: indexPath.row, for: listType) as? LendingData {
                         cell2.itemName?.text = item.name
+                        cell2.itemOwner?.text = item.owner
+                        cell2.itemPrice?.text = "฿\(item.pricePerMin)"
+                        cell2.itemQuality?.text = item.quanlity
+                        if(item.status == .unavaliable) {
+                            cell2.itemStatus.isHidden = false
+                        } else {
+                            cell2.itemStatus.isHidden = true
+                        }
                     }
                 }
                 else {
@@ -124,6 +176,7 @@ extension ViewController2: UICollectionViewDataSource, UICollectionViewDelegate,
                         cell2.itemName?.text = item.reviewString
                     }
                 }
+                
                 
                 return cell2
             }
@@ -133,25 +186,19 @@ extension ViewController2: UICollectionViewDataSource, UICollectionViewDelegate,
     
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
         if (collectionView == collectionViewTabbar) {
             collectionViewTabbar.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
             if let cell = collectionView.cellForItem(at: indexPath) as? TabCollectionViewCell {
                 cell.selectedBorder.backgroundColor = UIColor.black
             }
+            
+            //load data again
             self.collectionViewData.reloadData()
-
-            if(indexPath.row == 0 || indexPath.row == 1) {
-                let columnLayout = ColumnFlowLayout(cellsPerRow: 2, minimumInteritemSpacing: 10, minimumLineSpacing: 19)
-                
-                collectionViewData?.collectionViewLayout = columnLayout
-                collectionViewData?.contentInsetAdjustmentBehavior = .always
-                
-            } else {
-                let columnLayout = ColumnFlowLayout(cellsPerRow: 1, minimumInteritemSpacing: 10, minimumLineSpacing: 19)
-                
-                collectionViewData?.collectionViewLayout = columnLayout
-                collectionViewData?.contentInsetAdjustmentBehavior = .always
-            }
+            // back to the top item
+            
+//            collectionViewData?.setContentOffset(.zero, animated: true)
+        
         }
         
         if (collectionView == collectionViewData) {
@@ -171,8 +218,6 @@ extension ViewController2: UICollectionViewDataSource, UICollectionViewDelegate,
     
     }
     
-    
-    
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
         if (collectionView == collectionViewTabbar) {
             if let cell = collectionView.cellForItem(at: indexPath) as? TabCollectionViewCell {
@@ -180,12 +225,14 @@ extension ViewController2: UICollectionViewDataSource, UICollectionViewDelegate,
             }
         }
     }
-
+    
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if scrollView == collectionViewData {
             
             var lastContentOffset: CGFloat = 0.0
             let maxHeaderHeight: CGFloat = 300.0
+            var bottomEdge = scrollView.contentOffset.y + scrollView.frame.size.height
+            
             if (scrollView.contentOffset.y >= (scrollView.contentSize.height - scrollView.frame.size.height)) {
                        //Scrolled to bottom
                 UIView.animate(withDuration: 0.3, animations: {
@@ -196,7 +243,7 @@ extension ViewController2: UICollectionViewDataSource, UICollectionViewDelegate,
                             
                        }
                    }
-                   else if (scrollView.contentOffset.y < self.lastContentOffset || scrollView.contentOffset.y <= 0) && (self.highConstraint.constant != maxHeaderHeight)  {
+                   else if (scrollView.contentOffset.y < lastContentOffset || scrollView.contentOffset.y <= 0) && (self.highConstraint.constant != maxHeaderHeight)  {
                        //Scrolling up, scrolled to top'
                        UIView.animate(withDuration: 0.3) {
                            self.highConstraint.constant = maxHeaderHeight
@@ -204,7 +251,7 @@ extension ViewController2: UICollectionViewDataSource, UICollectionViewDelegate,
                            self.headerView.alpha = 1.0
                        }
                    }
-                   else if (scrollView.contentOffset.y > self.lastContentOffset) && self.highConstraint.constant != 0.0 {
+                   else if (scrollView.contentOffset.y > lastContentOffset) && highConstraint.constant != 0.0 {
                        //Scrolling down
                        UIView.animate(withDuration: 0.3) {
                            self.highConstraint.constant = 0.0
@@ -212,7 +259,7 @@ extension ViewController2: UICollectionViewDataSource, UICollectionViewDelegate,
                            self.headerView.alpha = 0.0
                        }
                    }
-                   self.lastContentOffset = scrollView.contentOffset.y
+                   lastContentOffset = scrollView.contentOffset.y
                }
         }
     }

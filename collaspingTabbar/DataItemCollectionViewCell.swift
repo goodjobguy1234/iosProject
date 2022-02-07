@@ -9,6 +9,7 @@ import UIKit
 
 class DataItemCollectionViewCell: UICollectionViewCell{
     
+    @IBOutlet var itemStatus: UIView!
     @IBOutlet var itemQuality: UILabel!
     @IBOutlet var itemOwner: UILabel!
     @IBOutlet var itemName: UILabel!

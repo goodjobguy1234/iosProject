@@ -8,24 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		80ECFDB01BD6907246A5A798 /* Pods_collaspingTabbar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 553EEDE43149552BD7A4ACC9 /* Pods_collaspingTabbar.framework */; };
+		FA26F32727B01ABC0070A1F4 /* CustomCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA26F32627B01ABC0070A1F4 /* CustomCollectionView.swift */; };
 		FA46541427AEDD04003B6995 /* ColumnFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA46541327AEDD04003B6995 /* ColumnFlowLayout.swift */; };
 		FAC3E79A27AB161700EA606A /* TabCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC3E79927AB161700EA606A /* TabCollectionViewCell.swift */; };
 		FAC3E79C27AB163100EA606A /* DataItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC3E79B27AB163100EA606A /* DataItemCollectionViewCell.swift */; };
 		FACC2C8627AB2553009E6C97 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC2C8527AB2553009E6C97 /* ViewController2.swift */; };
 		FAD0024727A9211900E7E0D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD0024627A9211900E7E0D2 /* AppDelegate.swift */; };
 		FAD0024927A9211900E7E0D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD0024827A9211900E7E0D2 /* SceneDelegate.swift */; };
-		FAD0024B27A9211900E7E0D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD0024A27A9211900E7E0D2 /* ViewController.swift */; };
 		FAD0024E27A9211900E7E0D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD0024C27A9211900E7E0D2 /* Main.storyboard */; };
 		FAD0025027A9211A00E7E0D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAD0024F27A9211A00E7E0D2 /* Assets.xcassets */; };
 		FAD0025327A9211A00E7E0D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD0025127A9211A00E7E0D2 /* LaunchScreen.storyboard */; };
 		FAE0743627A9285C002FD560 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE0743527A9285C002FD560 /* ViewModel.swift */; };
-		FAE0743E27A94252002FD560 /* CustomUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE0743D27A94252002FD560 /* CustomUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		23B1FC1A2E7AA6788D718192 /* Pods-collaspingTabbar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-collaspingTabbar.debug.xcconfig"; path = "Target Support Files/Pods-collaspingTabbar/Pods-collaspingTabbar.debug.xcconfig"; sourceTree = "<group>"; };
 		553EEDE43149552BD7A4ACC9 /* Pods_collaspingTabbar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_collaspingTabbar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F092A5AC8CC3BBAEDB80F51A /* Pods-collaspingTabbar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-collaspingTabbar.release.xcconfig"; path = "Target Support Files/Pods-collaspingTabbar/Pods-collaspingTabbar.release.xcconfig"; sourceTree = "<group>"; };
+		FA26F32627B01ABC0070A1F4 /* CustomCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionView.swift; sourceTree = "<group>"; };
 		FA46541327AEDD04003B6995 /* ColumnFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColumnFlowLayout.swift; sourceTree = "<group>"; };
 		FAC3E79927AB161700EA606A /* TabCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCollectionViewCell.swift; sourceTree = "<group>"; };
 		FAC3E79B27AB163100EA606A /* DataItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataItemCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -33,13 +33,11 @@
 		FAD0024327A9211900E7E0D2 /* collaspingTabbar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = collaspingTabbar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD0024627A9211900E7E0D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAD0024827A9211900E7E0D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FAD0024A27A9211900E7E0D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FAD0024D27A9211900E7E0D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAD0024F27A9211A00E7E0D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAD0025227A9211A00E7E0D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAD0025427A9211A00E7E0D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAE0743527A9285C002FD560 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
-		FAE0743D27A94252002FD560 /* CustomUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,17 +92,16 @@
 			children = (
 				FAD0024627A9211900E7E0D2 /* AppDelegate.swift */,
 				FAD0024827A9211900E7E0D2 /* SceneDelegate.swift */,
-				FAD0024A27A9211900E7E0D2 /* ViewController.swift */,
 				FAD0024C27A9211900E7E0D2 /* Main.storyboard */,
 				FAD0024F27A9211A00E7E0D2 /* Assets.xcassets */,
 				FAD0025127A9211A00E7E0D2 /* LaunchScreen.storyboard */,
 				FAD0025427A9211A00E7E0D2 /* Info.plist */,
 				FAE0743527A9285C002FD560 /* ViewModel.swift */,
-				FAE0743D27A94252002FD560 /* CustomUIView.swift */,
 				FAC3E79927AB161700EA606A /* TabCollectionViewCell.swift */,
 				FAC3E79B27AB163100EA606A /* DataItemCollectionViewCell.swift */,
 				FACC2C8527AB2553009E6C97 /* ViewController2.swift */,
 				FA46541327AEDD04003B6995 /* ColumnFlowLayout.swift */,
+				FA26F32627B01ABC0070A1F4 /* CustomCollectionView.swift */,
 			);
 			path = collaspingTabbar;
 			sourceTree = "<group>";
@@ -224,11 +221,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAD0024B27A9211900E7E0D2 /* ViewController.swift in Sources */,
 				FA46541427AEDD04003B6995 /* ColumnFlowLayout.swift in Sources */,
 				FACC2C8627AB2553009E6C97 /* ViewController2.swift in Sources */,
 				FAC3E79C27AB163100EA606A /* DataItemCollectionViewCell.swift in Sources */,
-				FAE0743E27A94252002FD560 /* CustomUIView.swift in Sources */,
+				FA26F32727B01ABC0070A1F4 /* CustomCollectionView.swift in Sources */,
 				FAC3E79A27AB161700EA606A /* TabCollectionViewCell.swift in Sources */,
 				FAD0024727A9211900E7E0D2 /* AppDelegate.swift in Sources */,
 				FAE0743627A9285C002FD560 /* ViewModel.swift in Sources */,

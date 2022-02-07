@@ -11,12 +11,23 @@ enum ListType: Int {
     case lendings, borrows, reviews
 }
 
+enum ItemStatus {
+    case unavaliable, avaliable
+}
+
 struct LendingData: ProfileData {
     var name: String
+    var pricePerMin: Int
+    var status: ItemStatus
+    var owner: String
+    var quanlity: String
 }
 
 struct BorrowingData: ProfileData {
     var name: String
+    var pricePerMin: Int
+    var owner: String
+    var quanlity: String
 }
 
 struct ReviewData: ProfileData {
@@ -26,13 +37,6 @@ struct ReviewData: ProfileData {
 protocol ProfileData {
     
 }
-//enum ProfileData {
-//
-//
-//    case lending(LendingData)
-//    case borrow(BorrowingData)
-//    case review(ReviewData)
-//}
 
 class ViewModel {
     let tabs: [ListType] = [.lendings, .borrows, .reviews]
