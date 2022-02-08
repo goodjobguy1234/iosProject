@@ -9,17 +9,18 @@ import UIKit
 
 class ViewController2: UIViewController {
 
+    @IBOutlet var writeReviewView: UIView!
+    @IBOutlet var reviewTableView: UITableView!
     @IBOutlet var distributeUIView: UIView!
     @IBOutlet var contentViewShadow: UIView!
     @IBOutlet var contentView: UIView!
-    @IBOutlet var headerView: UIView!
+    @IBOutlet var headerView: ProfileHeader!
     @IBOutlet var highConstraint: NSLayoutConstraint!
     @IBOutlet var collectionViewTabbar: UICollectionView!
     @IBOutlet var collectionViewData: UICollectionView!
     
     private var viewModel:ViewModel!
     private var lastContentOffset: CGFloat = 0.0
-
     
     private var lendingList: [LendingData] = [
         LendingData(name: "test1", pricePerMin: 300, status: .unavaliable, owner: "Thitare Nimanong", quanlity: "Fair"),
@@ -52,28 +53,33 @@ class ViewController2: UIViewController {
     ]
     
     private var reviewList: [ReviewData] = [
-        ReviewData(reviewString: "testRev1"),
-        ReviewData(reviewString: "testRev2"),
-        ReviewData(reviewString: "testRev3"),
-        ReviewData(reviewString: "testRev4"),
-        ReviewData(reviewString: "testRev5"),
-        ReviewData(reviewString: "testRev6"),
-        ReviewData(reviewString: "testRev7"),
-        ReviewData(reviewString: "testRev8"),
-        ReviewData(reviewString: "testRev9"),
-        ReviewData(reviewString: "testRev10"),
-        ReviewData(reviewString: "testRev11"),
-        ReviewData(reviewString: "testRev12"),
-        ReviewData(reviewString: "testRev13"),
+        ReviewData(reviewString: "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.", reviewName: "bam"),
+        ReviewData(reviewString: "testRev2", reviewName: "bam"),
+        ReviewData(reviewString: "testRev3", reviewName: "bam"),
+        ReviewData(reviewString: "testRev4", reviewName: "bam"),
+        ReviewData(reviewString: "testRev5", reviewName: "bam"),
+        ReviewData(reviewString: "testRev6", reviewName: "bam"),
+        ReviewData(reviewString: "testRev7", reviewName: "bam"),
+        ReviewData(reviewString: "testRev8", reviewName: "bam"),
+        ReviewData(reviewString: "testRev9", reviewName: "bam"),
+        ReviewData(reviewString: "testRev10", reviewName: "bam"),
+        ReviewData(reviewString: "testRev11", reviewName: "bam"),
+        ReviewData(reviewString: "testRev12", reviewName: "bam"),
+        ReviewData(reviewString: "testRev13", reviewName: "bam"),
     ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        writeReviewView.isHidden = true
+        reviewTableView.isHidden = true
         viewModel = ViewModel(lending: lendingList, borrows: borrowingList, reviews: reviewList)
         
         self.collectionViewTabbar.selectItem(at: IndexPath(row: 0, section: 0), animated: false, scrollPosition: .left)
     
+        writeReviewView.layer.cornerRadius = 4
+        writeReviewView.layer.borderColor = UIColor.lightGray.cgColor
+        writeReviewView.layer.borderWidth = 1.0
+        
         distributeUIView.layer.cornerRadius = 16
         distributeUIView.layer.borderWidth = 1.0
         distributeUIView.layer.borderColor = UIColor.lightGray.cgColor
@@ -88,6 +94,22 @@ class ViewController2: UIViewController {
         
         headerView.isUserInteractionEnabled = true
         headerView.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture(_:))))
+        
+        writeReviewView.isUserInteractionEnabled = true
+        writeReviewView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(onWriteReviewClicked(_gesture:))))
+    }
+    
+    @objc private func onWriteReviewClicked (_gesture: UITapGestureRecognizer) {
+        let view = _gesture.view
+        // go to next page
+        
+        if let reviewViewController = storyboard?.instantiateViewController(withIdentifier: "reviewpage") as? ReviewViewController {
+            reviewViewController.timeText = "13:00 p.m"
+            reviewViewController.userImage = "john"
+            reviewViewController.dateText = "24 September 2020"
+            reviewViewController.userNameText = "Nathan Woah"
+            self.present(reviewViewController, animated: true)
+        }
     }
     
     @objc private func handlePanGesture (_ gesture : UIPanGestureRecognizer ) {
@@ -148,22 +170,25 @@ extension ViewController2: UICollectionViewDataSource, UICollectionViewDelegate,
             if let selectedIndex = collectionViewTabbar.indexPathsForSelectedItems?.first?.row, let listType = ListType(rawValue: selectedIndex) {
                 let cell2 = collectionViewData.dequeueReusableCell(withReuseIdentifier: "itemcell", for: indexPath) as! DataItemCollectionViewCell
                 
-                
                 if(listType == .borrows) {
+
                     if let item = self.viewModel.element(at: indexPath.row, for: listType) as? BorrowingData {
                         cell2.itemName?.text = item.name
                         cell2.itemOwner?.text = item.owner
                         cell2.itemPrice?.text = "฿\(item.pricePerMin)"
                         cell2.itemQuality?.text = item.quanlity
+                        cell2.imageItem?.image = UIImage(named: item.imageName) // load image here
                         cell2.itemStatus?.isHidden = true
                     }
                     
                 } else if (listType == .lendings) {
+
                     if let item = self.viewModel.element(at: indexPath.row, for: listType) as? LendingData {
                         cell2.itemName?.text = item.name
                         cell2.itemOwner?.text = item.owner
                         cell2.itemPrice?.text = "฿\(item.pricePerMin)"
                         cell2.itemQuality?.text = item.quanlity
+                        cell2.imageItem?.image = UIImage(named: item.imageName)
                         if(item.status == .unavaliable) {
                             cell2.itemStatus.isHidden = false
                         } else {
@@ -171,12 +196,6 @@ extension ViewController2: UICollectionViewDataSource, UICollectionViewDelegate,
                         }
                     }
                 }
-                else {
-                    if let item = self.viewModel.element(at: indexPath.row, for: listType) as? ReviewData {
-                        cell2.itemName?.text = item.reviewString
-                    }
-                }
-                
                 
                 return cell2
             }
@@ -193,11 +212,21 @@ extension ViewController2: UICollectionViewDataSource, UICollectionViewDelegate,
                 cell.selectedBorder.backgroundColor = UIColor.black
             }
             
-            //load data again
-            self.collectionViewData.reloadData()
-            // back to the top item
-            
-//            collectionViewData?.setContentOffset(.zero, animated: true)
+            if(indexPath.row == 2) {
+                reviewTableView.isHidden = false
+                collectionViewData?.isHidden = true
+                writeReviewView?.isHidden = false
+                self.reviewTableView.reloadData()
+            } else {
+                //load data again
+                reviewTableView.isHidden = true
+                collectionViewData.isHidden = false
+                writeReviewView?.isHidden = true
+                self.collectionViewData.reloadData()
+                // back to the top item
+                
+    //            collectionViewData?.setContentOffset(.zero, animated: true)
+            }
         
         }
         
@@ -227,7 +256,7 @@ extension ViewController2: UICollectionViewDataSource, UICollectionViewDelegate,
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        if scrollView == collectionViewData {
+        if scrollView == collectionViewData || scrollView == reviewTableView {
             
             var lastContentOffset: CGFloat = 0.0
             let maxHeaderHeight: CGFloat = 300.0
@@ -264,6 +293,35 @@ extension ViewController2: UICollectionViewDataSource, UICollectionViewDelegate,
         }
     }
 
+
+extension ViewController2: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if let selectedIndex = collectionViewTabbar.indexPathsForSelectedItems?.first?.row, let listType = ListType(rawValue: selectedIndex) {
+            return self.viewModel.numberOfRows(for: listType)
+
+        }
+        return 0
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+       
+        let cell = reviewTableView.dequeueReusableCell(withIdentifier: "reviewcell", for: indexPath) as! ReviewTableViewCell
+        if let item = self.viewModel.element(at: indexPath.row, for: .reviews) as? ReviewData {
+            cell.reviewName.text = item.reviewName
+            cell.reviewString.text = item.reviewString
+            cell.reviewImage.image = UIImage(named: item.imageName)
+        }
+        return cell
+    }
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false)
+    }
+
+    
+}
 
 
 

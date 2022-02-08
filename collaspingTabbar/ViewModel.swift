@@ -21,6 +21,7 @@ struct LendingData: ProfileData {
     var status: ItemStatus
     var owner: String
     var quanlity: String
+    var imageName: String = "john"
 }
 
 struct BorrowingData: ProfileData {
@@ -28,10 +29,13 @@ struct BorrowingData: ProfileData {
     var pricePerMin: Int
     var owner: String
     var quanlity: String
+    var imageName: String = "john"
 }
 
 struct ReviewData: ProfileData {
     var reviewString: String
+    var reviewName: String
+    var imageName: String = "john"
 }
 
 protocol ProfileData {

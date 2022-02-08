@@ -18,6 +18,9 @@
 		FAD0024E27A9211900E7E0D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD0024C27A9211900E7E0D2 /* Main.storyboard */; };
 		FAD0025027A9211A00E7E0D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAD0024F27A9211A00E7E0D2 /* Assets.xcassets */; };
 		FAD0025327A9211A00E7E0D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD0025127A9211A00E7E0D2 /* LaunchScreen.storyboard */; };
+		FAD9315E27B2884C0014BCFB /* ReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD9315D27B2884C0014BCFB /* ReviewTableViewCell.swift */; };
+		FAD9316027B2E9BB0014BCFB /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD9315F27B2E9BB0014BCFB /* ReviewViewController.swift */; };
+		FAD9316227B2F6490014BCFB /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD9316127B2F6490014BCFB /* ProfileHeader.swift */; };
 		FAE0743627A9285C002FD560 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE0743527A9285C002FD560 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +40,9 @@
 		FAD0024F27A9211A00E7E0D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAD0025227A9211A00E7E0D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAD0025427A9211A00E7E0D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAD9315D27B2884C0014BCFB /* ReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewCell.swift; sourceTree = "<group>"; };
+		FAD9315F27B2E9BB0014BCFB /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
+		FAD9316127B2F6490014BCFB /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
 		FAE0743527A9285C002FD560 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,6 +108,9 @@
 				FACC2C8527AB2553009E6C97 /* ViewController2.swift */,
 				FA46541327AEDD04003B6995 /* ColumnFlowLayout.swift */,
 				FA26F32627B01ABC0070A1F4 /* CustomCollectionView.swift */,
+				FAD9315D27B2884C0014BCFB /* ReviewTableViewCell.swift */,
+				FAD9315F27B2E9BB0014BCFB /* ReviewViewController.swift */,
+				FAD9316127B2F6490014BCFB /* ProfileHeader.swift */,
 			);
 			path = collaspingTabbar;
 			sourceTree = "<group>";
@@ -223,12 +232,15 @@
 			files = (
 				FA46541427AEDD04003B6995 /* ColumnFlowLayout.swift in Sources */,
 				FACC2C8627AB2553009E6C97 /* ViewController2.swift in Sources */,
+				FAD9316027B2E9BB0014BCFB /* ReviewViewController.swift in Sources */,
 				FAC3E79C27AB163100EA606A /* DataItemCollectionViewCell.swift in Sources */,
 				FA26F32727B01ABC0070A1F4 /* CustomCollectionView.swift in Sources */,
 				FAC3E79A27AB161700EA606A /* TabCollectionViewCell.swift in Sources */,
 				FAD0024727A9211900E7E0D2 /* AppDelegate.swift in Sources */,
 				FAE0743627A9285C002FD560 /* ViewModel.swift in Sources */,
+				FAD9315E27B2884C0014BCFB /* ReviewTableViewCell.swift in Sources */,
 				FAD0024927A9211900E7E0D2 /* SceneDelegate.swift in Sources */,
+				FAD9316227B2F6490014BCFB /* ProfileHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
